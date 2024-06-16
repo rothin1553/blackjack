@@ -1,6 +1,6 @@
 # blackjack 21
 
-This is a simple c++ program to illustrate a game of black jack (21) in console terminal. 
+This is a simple c++ program to illustrate a game of black jack (21) in console terminal. This code was written in 2019.
 
 ### How to run:
 * Clone project
