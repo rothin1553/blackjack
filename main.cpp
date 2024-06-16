@@ -103,9 +103,15 @@ int main()
 
         
             if(cmd == '1' || userFinish)
-                prototype2p1(deck.getCard(), deck, deck1, true);
+            {
+                Card card = deck.getCard();
+                prototype2p1(card, deck, deck1, true);
+            }
             else if(cmd == '2')
-                prototype2p1(deck1.getCard(), deck1, deck, false);
+            {
+                Card card = deck1.getCard();
+                prototype2p1(card, deck1, deck, false);
+            }
             else if(cmd == 'x' )
             {
                 deck.setStatus(false);
@@ -113,7 +119,8 @@ int main()
 
                 if((deck.totalValue() < 21) && (deck.totalValue() < deck1.totalValue()))
                 {
-                    prototype2p1(deck.getCard(), deck, deck1, true);
+                    Card card = deck.getCard();
+                    prototype2p1(card, deck, deck1, true);
                 }
                 else
                 {
